@@ -94,8 +94,6 @@ async function xybSign(config) {
   const login = async () => {
     console.log(">> 执行登录");
     const { sessionId, loginerId, loginKey } = await $http.post(apis.login, {
-      username: config.username,
-      password: config.password,
       openId: config.openId,
       unionId: config.unionId,
       model: "Macmini9,1",
